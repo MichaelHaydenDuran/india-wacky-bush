@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="Hayden Duran">
+        <title>Cookie Crew Newsletter</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="Styles/styles.css">
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.min.js" integrity="sha256-lSjKY0/srUM9BE3dPm+c4fBo1dky2v27Gdjm2uoZaL0=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="scripts/scripts.js"></script>
+    </head>
+    <body class="bg-light" style="background-image: url(images/cookie.jpg)">
+        <!-- Responsive Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+            <div class="container">
+                <a class="navbar-brand"><i class="bi bi-cookie"></i> Cookie Crew Neswletter</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item p-2 text-light"><a class="nav-link active" aria-current="page" href="index.html" target="_blank"><i class="bi bi-house"></i> Home</a></li>
+                        <li class="nav-item p-2 text-light"><a class="nav-link active" aria-current="page" href="https://github.com/MichaelHaydenDuran/india-wacky-bush" target="_blank"><i class="bi bi-github"></i> Github Repo</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Page content-->
+        <div class="container bg-dark">
+            <!--Header-->
+            <div class="row">
+                <div class="col-12 text-center mt-3 border-dark bg-dark">
+                    <h1 class="text-light fs-1">Join the Cookie Crew Today!</h1>
+                    <p class="lead text-light fs-3">Complete the Form Below to Recieve Weekly Content About Cookie Culture!</p>
+                </div>
+            </div>
+            <div class="row">
+                <!--About Us-->
+                <div class="col-6 p-3">
+                    <div class="card text-center h-100 shadow">
+                        <div class="card-header fs-2"><i class="bi bi-info-circle text-info"></i> About Cookie Crew</div>
+                        <div class="card-body">
+                          <h5 class="card-title">What does the Cookie Crew newsletter offer you?</h5>
+                          <ol class="list-group list-group-numbered text-start">
+                            <li class="list-group-item">Daily news of cookie related subjects</li>
+                            <li class="list-group-item">In depth recipes and written guides</li>
+                            <li class="list-group-item">Access to exclusive and emerging cookie cooking tips & tricks</li>
+                            <li class="list-group-item">Access to exclusive chat rooms with other cookie lovers</li>
+                            <li class="list-group-item">Personalized happy birthday letter every year</li>
+                            <li class="list-group-item">and much much more...</li>
+                          </ol>
+                          <h5 class="mt-4"> Contact cookiecrewhelp@gmail.com for any questions</h5>
+                        </div>
+                    </div>  
+                </div>
+                <!--Form Signup-->
+                <div class="col-6 p-3">
+                    <div class="card text-center h-100 shadow">
+                        <div class="card-header fs-2"><i class="bi bi-check-circle text-info"></i> Sign Up Form</div>
+                        <div class="card-body">
+                          <h5 class="card-title">Type Your Information Below!</h5>
+                          <!--Form-->
+                          <form action="saveUser.php">
+                            <div class="form-group">
+                              <label for="name">Full Name:</label>
+                              <input type="text" class="form-control" placeholder="Ex. First Last" id="name">
+                            </div>
+                            <div class="form-group">
+                              <label for="email">Email:</label>
+                              <input type="text" class="form-control" placeholder="EX. myemail@gmail.com" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phonenumber">Phone Number:</label>
+                                <input type="text" class="form-control" placeholder="EX. 555-555-5555" id="phonenumber">
+                            </div>
+                            <div class="form-group">
+                                <label for="phonenumber">Birthday:</label>
+                                <input type="text" class="form-control" placeholder="EX. 6/21/1990" id="bDay">
+                            </div>
+                            <!--Checkboxes-->
+                            <div class="checkbox mt-2">
+                              <label><input type="checkbox" id="SMS"> Disbale SMS Notifications</label> 
+                              <label><input type="checkbox" id="Email"> Disbale Email Notifications</label>
+                            </div>
+                            <button id="submit-form" data-toggle="modal" data-target="#submitModal" type="button" class="btn btn-outline-dark text-success mt-2 me-2">Submit</button>
+                          </form>
+                        </div>
+                    </div>  
+                </div>
+            <!--Modal-->
+            <div id="submitModal" class="modal fade" tabindex="-1"> 
+                <div class="modal-dialog"> 
+                    <div class="modal-content"> 
+                        <div class="modal-header text-center"> 
+                            <h5 class="modal-title text-center">Submission Successful</h5>
+                        </div> 
+                        <div class="modal-body"> 
+                            <p class="text-center" id="modal_name"></p>
+                            <p class="text-center" id="modal_email"></p>
+                            <p class="text-center" id="modal_phonenumber"></p>
+                            <p class="text-center" id="modal_bDay"></p>
+                            <p class="text-center" id="modal_noSMS"></p>
+                            <p class="text-center" id="modal_noEmail"></p>
+                         </div> 
+                    </div> 
+                </div> 
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="footer fixed-bottom">
+            <div class="container-fluid bg-dark">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="text-center text-light p-2">
+                            <h4><i class="bi bi-c-circle me-2"></i>2024 Cookie Crew Co.</h4>
+                            <!--Change to India Webpage Deployment-->
+                            <a class="btn btn-sm btn-dark" href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fgithub.com%2FMichaelHaydenDuran%2Fbirthday-foxtrot" target="_blank"><i class="bi bi-code-slash"></i> HTML Validator</a>
+                            <a class="btn btn-sm btn-dark" href="https://gist.github.com/barrycumbie/94d7c36ba2e18b02aeba969aa6078f23" target="_blank"><i class="bi bi-check2"></i> My Webpage Instructions</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+        </footer>
+        </div>
+    </body>
+</html>
